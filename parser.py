@@ -15,8 +15,12 @@ class Scraper:
             if url is None:
                 continue
             if "html" in url:
+                f = open(r"/home/blackkasper/parser_data.txt",'a')
+                f.write(url)
+                f.write("\n")
+
                 print("\n" + url)
+        f.close()
 
-
-news = "https://yandex.ru/news"
+news = "https://ria.ru/"
 Scraper(news).scrape()
