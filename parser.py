@@ -22,5 +22,6 @@ class Scraper:
                 print("\n" + url)
         f.close()
 
+
 news = "https://ria.ru/"
 Scraper(news).scrape()
